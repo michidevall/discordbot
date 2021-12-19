@@ -70,7 +70,7 @@ text = open_and_read_file(filenames)
 chains = make_chains(text)
 
 client = discord.Client()
-emoji = '\n{THUMBS UP SIGN}'
+
 
 @client.event
 async def on_ready():
@@ -82,10 +82,10 @@ async def on_message(message):
         return
     if message.content.startswith('hello.'):
        await message.channel.send('Yo.')
-       await message.add_reaction(emoji)
+      
        
 
-client.run('ODkwNzA0OTMxODQ4MzU1ODkw.YUzrnA.G-xowyGUQh_yXkZ3POnqH6jPUo4')
+client.run('ODkwNzA0OTMxODQ4MzU1ODkw.YUzrnA.CZU6eYge0VFULhMEoww87njJzQo')
 
 
 
